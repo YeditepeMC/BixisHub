@@ -1,0 +1,20 @@
+name: BixisHub
+version: '${project.version}'
+main: net.yeditepemc.bixishub.BixisHubPlugin
+api-version: '1.21'
+description: YeditepeMC lobi sunucusu temel mekanik plugini
+author: YeditepeMC
+
+commands:
+  setspawn:
+    description: Mevcut konumu spawn olarak kaydet
+    usage: /setspawn
+    permission: bixishub.admin
+  spawn:
+    description: Spawn noktasina isinlan
+    usage: /spawn
+
+permissions:
+  bixishub.admin:
+    description: BixisHub yonetici komutlari
+    default: op
