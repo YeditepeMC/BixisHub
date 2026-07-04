@@ -13,6 +13,13 @@ commands:
   spawn:
     description: Spawn noktasina isinlan
     usage: /spawn
+  setkasa:
+    description: Mevcut konumu kasa alani olarak kaydet
+    usage: /setkasa
+    permission: bixishub.admin
+  kasa:
+    description: Kasa alanina isinlan
+    usage: /kasa
 
 permissions:
   bixishub.admin:
