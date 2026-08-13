@@ -3,6 +3,7 @@ package net.yeditepemc.bixishub;
 import net.yeditepemc.bixishub.listener.HubListener;
 import net.yeditepemc.bixishub.manager.CrateManager;
 import net.yeditepemc.bixishub.manager.SpawnManager;
+import net.yeditepemc.bixishub.manager.VoidProtectionTask;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
@@ -32,6 +33,12 @@ public class BixisHubPlugin extends JavaPlugin {
 
         // Listener kaydi
         getServer().getPluginManager().registerEvents(new HubListener(this), this);
+
+        // Void korumasi tarama gorevi
+        if (VoidProtectionTask.isEnabled(this)) {
+            long interval = VoidProtectionTask.getCheckIntervalTicks(this);
+            new VoidProtectionTask(this).runTaskTimer(this, interval, interval);
+        }
 
         getLogger().info("BixisHub etkinlestirildi.");
     }

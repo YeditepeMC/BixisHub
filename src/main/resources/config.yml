@@ -16,3 +16,11 @@ crate:
   z: 0.0
   yaw: 0.0
   pitch: 0.0
+
+# Void korumasi: y-level altina inen oyuncular spawn'a isinlanir.
+# world bos birakilirsa kayitli spawn'in dunyasi kullanilir.
+void-protection:
+  enabled: true
+  y-level: 0
+  world: ""
+  check-interval-ticks: 10

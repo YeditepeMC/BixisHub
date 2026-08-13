@@ -10,6 +10,7 @@ spawn system, and join/quit message suppression.
 - Custom spawn point system
 - Join/quit messages suppressed
 - Respawn teleports to lobby spawn
+- Void protection: players falling below a configured Y level are teleported to spawn
 
 ## Commands
 | Komut | Açıklama | Permission |
