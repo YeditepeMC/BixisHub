@@ -13,8 +13,8 @@
     <description>YeditepeMC lobi sunucusu temel mekanik plugini</description>
 
     <properties>
-        <java.version>25</java.version>
-        <maven.compiler.release>25</maven.compiler.release>
+        <java.version>21</java.version>
+        <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>26.1.2.build.72-stable</version>
+            <version>1.21.11-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

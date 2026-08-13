@@ -19,8 +19,8 @@ spawn system, and join/quit message suppression.
 | `/spawn` | Spawn noktasına ışınlan | Herkes |
 
 ## Requirements
-- Paper 26.1.2
-- Java 25
+- Paper 1.21.11+ (single jar, also runs on Paper 26.1.2)
+- Java 21+
 
 ## Installation
 1. Drop BixisHub.jar into plugins/
